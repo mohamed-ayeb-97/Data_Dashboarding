@@ -4,6 +4,8 @@ import plotly.express as px
 
 app = Dash(__name__)
 
+server = app.server
+
 df = pd.read_excel('data_file.xlsx')
 
 app.layout = html.Div(
