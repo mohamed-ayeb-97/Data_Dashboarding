@@ -8,9 +8,18 @@ server = app.server
 
 df = pd.read_excel('data_file.xlsx')
 
-app.layout = html.Div(
-    
+# Background image style
+background_image_style = {
+    'background-image': 'url(" https://www.tunisie-direct.com/wp-content/uploads/2021/11/oaca_1547656075.jpg")',
+    'background-size': '530px 230px',
+    'background-repeat': 'no-repeat',
+    'background-position': 'top right',
+    'min-height': '100vh',
+}
 
+app.layout = html.Div(
+    style=background_image_style,
+    
     children=[
         html.Div([
             html.Br(),
