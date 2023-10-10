@@ -9,7 +9,7 @@ server = app.server
 df = pd.read_excel('data_file.xlsx')
 
 app.layout = html.Div(
-    style=background_image_style,
+    
 
     children=[
         html.Div([
